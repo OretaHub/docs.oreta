@@ -1,4 +1,4 @@
-### Dockerhub
+### Oreta images on Dockerhub
 
 >Docker Hub is a registry for creating  both public and private repositories and storing and sharing docker images.
 
@@ -6,13 +6,16 @@
 
 > Note: You must use Docker Engine 1.6 or later to push to Docker Hub. Follow the official installation instructions to install docker [https://docs.docker.com/install/](https://docs.docker.com/install/)
 
-> ```
+
+```
 # docker login
 Login with your Docker ID to push and pull images from Docker Hub. 
 If you don't have a Docker ID, head over to https://hub.docker.com 
 to create one.
+
 Username: oretahub
 Password: < will be provided via email>
+
 Login Succeeded
 ```
 
@@ -24,9 +27,9 @@ Login Succeeded
 > call the image hugocn
 
 2. Create a tag for the local docker image with the dockerhub registry name. 
-> ```docker tag hugocn oretahub/hugocn:v1.3 ```
+```docker tag hugocn oretahub/hugocn:v1.3 ```
 3. push the image to the dockerhub registry
->
+
 ```
 # docker push oretahub/hugocn:v1.3
 The push refers to repository [docker.io/oretahub/hugocn]
